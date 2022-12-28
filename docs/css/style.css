@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: auto;
+  overflow-x: hidden;
+}
+.container .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+  width: 100%;
+}
+.container .content {
+  margin: 20px auto;
+  width: 100%;
+}
+.container .content .content-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.container .content .items .item-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px;
+  width: 100%;
+}
+.container .content .items .item-body {
+  margin: 0 0 0 25px;
+  width: 100%;
+}
+.container .content .items .item-body .database-img {
+  width: 500px;
+}
+.container .img-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+.container .img-items .img-item {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  flex: 0 0 auto;
+}
+.container .img-items .img-item .item-img {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+}
+.container .img-items .img-item .item-img:hover {
+  opacity: 0.2;
+}
+.container .img-items .img-item .item-img img {
+  width: 100%;
+}
+.container .img-items .img-item .item {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .img-items .img-item .item span {
+  padding: 1px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
