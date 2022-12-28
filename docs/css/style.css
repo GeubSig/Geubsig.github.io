@@ -30,8 +30,11 @@
   margin: 0 0 0 25px;
   width: 100%;
 }
-.container .content .items .item-body .database-img {
+.container .content .items .item-body img {
   width: 500px;
+}
+.container .content .items .item-body .item-text {
+  width: 80%;
 }
 .container .img-items {
   display: flex;
