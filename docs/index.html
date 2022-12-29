@@ -137,13 +137,18 @@
             </div>
           </div>
         </div>
+        <div class="item-description">
+          ※ 사진에 마우스를 올리면 상세 설명이 보입니다.
+        </div>
       </div>
       <div class="content">
         <div class="content-title">3. 사용 기술</div>
         <div class="items">
           <div class="item-title">- 개발에 사용한 기술</div>
           <div class="item-body">
-            <div class="item-text"><b>AI & 백엔드</b> : Yolo v%, Deepsort, Django</div>
+            <div class="item-text">
+              <b>AI & 백엔드</b> : Yolo v%, Deepsort, Django
+            </div>
             <div class="item-text"><b>프론트</b> : React, Adobe XD</div>
             <div class="item-text"><b>라벨링</b> : LabelIMG</div>
             <div class="item-text"><b>Etc.</b> Git, MariaDB</div>
@@ -183,44 +188,42 @@
         <div class="items">
           <div class="item-title">- 레이아웃 세부 설명</div>
           <div class="item-body">
-            <div class="items">
-              <div class="item-body">
-                <div class="img-item">
-                  <div class="item-title">메인페이지</div>
-                  <div class="item-img">
-                    <a
-                      href="https://user-images.githubusercontent.com/79764169/209899548-589d9517-d06f-481e-96ef-1e02329648c7.png"
-                      target="_blank"
-                      ><img src="./images/메인페이지.png" alt="메인페이지"
-                    /></a>
-                  </div>
-                  <div class="item">
-                    <div class="item-body">
-                      <div class="item-text">
-                        AI 검출결과 브로드캐스팅 + 검출결과를 토대로 현재 인원 및 대기시간을 알려줌
-                      </div>
-                    </div>
+            <div class="img-item">
+              <div class="item-title">메인페이지</div>
+              <div class="item-img">
+                <a
+                  href="https://user-images.githubusercontent.com/79764169/209899548-589d9517-d06f-481e-96ef-1e02329648c7.png"
+                  target="_blank"
+                  ><img src="./images/메인페이지.png" alt="메인페이지"
+                /></a>
+              </div>
+              <div class="item">
+                <div class="item-body">
+                  <div class="item-text">
+                    AI 검출결과 브로드캐스팅 + 검출결과를 토대로 현재 인원
+                    및 대기시간을 알려줌
                   </div>
                 </div>
-                <div class="img-item">
-                  <div class="item-title">대시보드페이지</div>
-                  <div class="item-img">
-                    <a
-                      href="https://user-images.githubusercontent.com/79764169/209899586-65241196-5865-4674-bf3a-5b8eefa8adac.png"
-                      target="_blank"
-                    >
-                      <img
-                        src="./images/대시보드페이지.png"
-                        alt="대시보드페이지"
-                      />
-                    </a>
-                  </div>
-                  <div class="item">
-                    <div class="item-body">
-                      <div class="item-text">
-                        AI가 검출한 결과를 볼 수 있는 페이지, 일별, 급식시간 시작 후 5분간격, 최근 24시간 급식실 내 인원 수를 알려줌
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div class="img-item">
+              <div class="item-title">대시보드페이지</div>
+              <div class="item-img">
+                <a
+                  href="https://user-images.githubusercontent.com/79764169/209899586-65241196-5865-4674-bf3a-5b8eefa8adac.png"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/대시보드페이지.png"
+                    alt="대시보드페이지"
+                  />
+                </a>
+              </div>
+              <div class="item">
+                <div class="item-body">
+                  <div class="item-text">
+                    AI가 검출한 결과를 볼 수 있는 페이지, 일별, 급식시간
+                    시작 후 5분간격, 최근 24시간 급식실 내 인원 수를 알려줌
                   </div>
                 </div>
               </div>
@@ -244,6 +247,66 @@
           </div>
         </div>
         <div class="items">
+          <div class="item-title">- 라벨링 규칙</div>
+          <div class="item-body">
+            <div class="item-margin">
+              <div class="item-text">※ 보이는 곳 네모로 라벨링</div>
+              <div class="item-text">※ 급식판 라벨링 x</div>
+            </div>
+            <div>
+              <div class="item-margin">
+                <div class="item-text"><b>- person(1)</b></div>
+                <div class="item-text">
+                  급식판을 들고 있는 사람은 person 클래스를 만들어 라벨링
+                </div>
+                <div class="item-text">
+                  신체의 일부가 나오는 경우(발만 보이는 경우 제외)
+                </div>
+              </div>
+              <div class="item-margin">
+                <div class="item-text">1. 배식</div>
+                <div class="item-text">
+                  급식판 드는 곳 부터 급식이 끝나는 곳 까지 라벨링
+                </div>
+              </div>
+              <div class="item-margin">
+                <div class="item-text">2. 퇴식</div>
+                <div class="item-text">
+                  음식물 버리는 곳 부터 급식판 끝나는 곳 까지 라벨링
+                </div>
+              </div>
+            </div>
+            <div class="item-margin">
+              <div class="item-text"><b>- sitting(81)</b></div>
+              <div class="item-text">
+                앉아있는 사람은 sitting 클래스를 만들어 라벨링
+              </div>
+              <div class="item-text">신체의 일부가 나오는 경우</div>
+              <div class="item-text">
+                의자에 딱 앉았을 때부터 (의자위에 엉덩이를 붙였을 경우, 먹고
+                있을 때와 자세 변경이 크지 않을 경우)
+              </div>
+            </div>
+            <div class="item-margin">
+              <div class="item-text"><b>- cook(82)</b></div>
+              <div class="item-text">
+                급식 조리원은 cook 클래스를 만들어 라벨링
+              </div>
+              <div class="item-text">
+                신체의 일부가 나오는 경우(다리가 보이지 않아도 다리부분 상상해서
+                라벨링)
+              </div>
+              <div class="item-text">
+                급식 조리원의 경우 조리복이 보이며 조리모자를 쓴 경우
+              </div>
+              <div class="item-text">
+                조리복의 경우 빨간색과 하약색 또는 파란색이 식별
+                가능해야함(하얀색만 보이는 경우는 제외)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
           <div class="item-title">- 세부 수행 과정</div>
           <div class="item-body">
             <div class="img-item">
@@ -257,7 +320,6 @@
             </div>
           </div>
         </div>
-      </div>
       <div class="content">
         <div class="content-title">6. 프로젝트 추진 결과</div>
         <div class="items">
@@ -284,7 +346,10 @@
           <div class="item-title">- 프로젝트 영상</div>
           <div class="item-body">
             <div class="item">
-              <a href="https://drive.google.com/file/d/1aSnxrU9KIqXXNdgeMAcjyHv6yUs9XAFZ/view?usp=sharing">프로젝트 소개 영상 보러가기</a>
+              <a
+                href="https://drive.google.com/file/d/1aSnxrU9KIqXXNdgeMAcjyHv6yUs9XAFZ/view?usp=sharing"
+                >프로젝트 소개 영상 보러가기</a
+              >
             </div>
           </div>
         </div>
