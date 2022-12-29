@@ -44,6 +44,7 @@
   width: 80%;
 }
 .container .content .items .item-body .item-img {
+  margin: 10px 0;
   width: 100%;
 }
 .container .content .items .item-body .item-img img {
@@ -51,6 +52,15 @@
 }
 .container .content .items .item-body .item-text {
   width: 100%;
+}
+.container .content .items .item-body .item-margin {
+  margin: 10px 0;
+}
+.container .content .item-description {
+  font-size: 13px;
+  font-weight: 300;
+  width: 100%;
+  color: grey;
 }
 .container .img-items {
   display: flex;

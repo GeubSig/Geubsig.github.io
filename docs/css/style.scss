@@ -38,11 +38,16 @@
           img {
             width: 500px;
           }
+          margin: 10px 0;
           width: 100%;
         }
 
         .item-text {
           width: 100%;
+        }
+
+        .item-margin {
+          margin: 10px 0;
         }
 
         margin: 0 0 0 25px;
@@ -52,6 +57,13 @@
         
         overflow-x: hidden;
       }
+    }
+
+    .item-description {
+      font-size: 13px;
+      font-weight: 300;
+      width: 100%;
+      color: grey;
     }
 
     margin: 20px auto;
