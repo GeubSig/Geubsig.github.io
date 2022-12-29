@@ -17,7 +17,6 @@
         font-size: 17px;
         font-weight: 600;
         margin: 15px 10px;
-        width: 100%;
       }
 
       .img-item {
@@ -26,9 +25,15 @@
           font-weight: 600;
           width: 100%;
         }
+        
+        overflow-x: auto;
       }
 
       .item-body {
+        .item-title {
+          width: 80%;
+        }
+
         .item-img {
           img {
             width: 500px;
@@ -37,14 +42,15 @@
         }
 
         .item-text {
-          width: 80%;
+          width: 100%;
         }
 
         margin: 0 0 0 25px;
         width: 95%;
         display: flex;
         flex-direction: column;
-        overflow-x: auto;
+        
+        overflow-x: hidden;
       }
     }
 
