@@ -23,14 +23,25 @@
 .container .content .items .item-title {
   font-size: 17px;
   font-weight: 600;
-  margin: 10px;
+  margin: 15px 10px;
+  width: 100%;
+}
+.container .content .items .img-item .item-title {
+  font-size: 17px;
+  font-weight: 600;
   width: 100%;
 }
 .container .content .items .item-body {
   margin: 0 0 0 25px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+.container .content .items .item-body .item-img {
   width: 100%;
 }
-.container .content .items .item-body img {
+.container .content .items .item-body .item-img img {
   width: 500px;
 }
 .container .content .items .item-body .item-text {
